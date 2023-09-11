@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&family=Great+Vibes&family=Noto+Sans+Khmer:wght@400;700&family=Noto+Sans:wght@500&family=Open+Sans:wght@600&family=PT+Serif&family=Pacifico&family=Pinyon+Script&family=Playfair:ital,wght@1,300&family=Poppins:wght@500&family=Press+Start+2P&family=Roboto+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  text-transform: capitalize;
+}
+:root {
+  --color1--: rgb(249, 197, 100);
+  --color2--: black;
+  --color3--: rgb(239, 237, 237);
+  --color4--: rgb(82, 80, 79);
+  --color5--: rgb(38, 38, 138);
+}
+.logo {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+  font-weight: bold;
+  color: rgb(13, 12, 12);
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.4rem;
+  font-family: "Poppins", sans-serif;
+}
+.top-one:nth-child(even) {
+  background-color: white;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(233, 233, 229);
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgb(172, 169, 169);
+}
+.navi a {
+  color: black;
+  padding: 10px 2rem;
+  font-size: 1.8rem;
+  border-radius: 5px;
+}
+.navi a:hover,
+.active {
+  color: rgb(86, 78, 63);
+  background-color: var(--color1--);
+}
+.icons i,
+.icons a {
+  cursor: pointer;
+  color: rgb(44, 41, 41);
+  height: 4rem;
+  line-height: 4rem;
+  width: 4rem;
+  text-align: center;
+  background-color: azure;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  margin-left: 4px;
+}
+
+.icons i:hover,
+.icons a:hover {
+  background-color: var(--color1--);
+  transform: scale(1.08);
+}
+#bar {
+  display: none;
+}
+/* top-start */
+.max-width {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 5rem 15rem;
+}
+.group {
+  margin-top: 5rem;
+}
+.top {
+  padding: 3rem 10%;
+}
+.slide {
+  display: flex;
+  align-items: center;
+  gap: 0 4rem;
+  justify-content: center;
+  padding-top: 10rem;
+}
+.small-top1 {
+  font-size: 2rem;
+  color: var(--color1--);
+}
+.top-1 {
+  margin: 2rem 0;
+  font-size: 5rem;
+  color: var(--color5--);
+  line-height: 1.1;
+}
+.text-top {
+  font-size: 2.2rem;
+  color: var(--color4--);
+  padding: 1rem 0;
+}
+
+.img-top > img {
+  width: 350px;
+  margin-left: 10%;
+}
+/* Button */
+.btn-top {
+  font-size: 1.8rem;
+  color: var(--color3--);
+  background: var(--color5--);
+  padding: 1.5rem 5rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.btn-top:hover {
+  background: var(--color1--);
+  color: var(--color2--);
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: scale(1.05);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--color5--);
+}
+
+/* Food */
+ .food{
+  margin-top: 10rem;
+ }
+ 
+.text-food {
+  text-align: center;
+  color: var(--color1--);
+  font-size: 1.6rem;
+  padding-top: 1rem;
+}
+.title-food {
+  text-align: center;
+  color: var(--color5--);
+  font-size: 3.5rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  padding-bottom: 10rem;
+  padding: 1rem 0 5rem 0rem;
+}
+.img-food {
+  width: 300px;
+  height: 300px;
+}
+.btn-food {
+  font-size: 1.3rem;
+  color: var(--color3--);
+  background: var(--color5--);
+  padding: 1.2rem 3rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.btn-food:hover{
+  background: var(--color1--);
+  color: var(--color2--);
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: scale(1.05);
+}
+.max-height{
+    width: 1024px;
+    margin: 0 auto; 
+}
+.box{
+  background-color: whitesmoke;
+  padding: 3rem ;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.fa-thumbs-up,.fa-eye{
+  position: absolute;
+  top: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 1.8rem;
+  color: var(--color2--);
+  display: none;
+}
+.fa-thumbs-up{
+ left: 1.5rem;
+}
+.fa-eye{
+  right: 1.5rem;
+}
+.box:hover{
+  box-shadow: 0 0 5px rgb(122, 119, 119);
+  border: 1px solid rgba(46, 45, 45,0.4);
+}
+.box:hover .fa-thumbs-up,.box:hover .fa-eye{
+  display: block;
+  transition: all 0.3s;
+}
+.fa-thumbs-up:hover{
+  background-color: var(--color5--);
+  color: white;
+}
+.fa-eye:hover{
+  background-color: var(--color1--);
+}
+.five-star{
+  padding: 1rem 0;
+}
+.fa-star,.fa-star-half-alt{
+  font-size: 1.5rem;
+  color: var(--color1--);
+}
+.name-food{
+  font-size: 3rem;
+  color: var(--color2--);
+}
+.price{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: chocolate;
+  margin-right: 1rem;
+}
+/* about us */
+.img-about>img{
+  width: 400px;
+}
+
+.row{
+  display: flex;
+  gap: 0 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.title-abou{
+  font-size: 4rem;
+  padding: 2rem 0;
+}
+.text-abou{
+  font-size: 2rem;
+}
+.icon-about{
+  display: flex;
+  gap: 0 1rem;
+  padding:1rem 0;
+  margin-top: 2rem;
+}
+.iconss{
+  display: flex;
+  background-color: var(--color3--);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  gap: 1rem;
+  border:1px solid rgba(39, 37, 37,0.5);
+  align-items: center;
+  justify-content: center;
+  /* flex: 1 1 17rem; */
+}
+.fa-shipping-fast,.fa-dollar-sign,.fa-headset{
+  font-size: 2rem;
+  color: var(--color1--);
+}
+.delevery{
+  font-size: 1.5rem;
+  color: var(--color2--);
+}
+.about{
+  margin-top: 10rem;
+}
+
+.iconss:hover{
+  box-shadow: 0 0 10px rgb(169, 166, 166);
+  border: 2px solid rgba(19, 18, 18,0.6);
+}
+ /* menu japan */
+.img-food-japan{
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.box-menu-japan{
+  padding: 2rem ;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+.fa-gratipay{
+  position: absolute;
+  top: 3rem;
+  left:3rem;
+  background-color: white;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 1.7rem;
+  display: none;
+  background-color: var(--color5--);
+  color: white;
+}
+.text-menu{
+  padding: 10rem 0 0 0 ;
+}
+.fa-gratipay:hover{
+  background-color: var(--color1--);
+  color: var(--color2--);
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+.box-menu-japan:hover{
+  border: 5px solid rgb(43, 39, 39);
+  transition: all 0.3s;
+}
+.box-menu-japan:hover .fa-gratipay {
+  display: block;
+
+}
+.menu-container{
+  background-color: rgba(14, 14, 14,0.7);
+  padding: 8rem;
+}
+.name-food-japan{
+  font-size: 1.5rem;
+  text-align:start;
+}
+/* review */
+.review-slide .slides{
+  padding: 2rem;
+  border: 3px solid rgb(16, 17, 17);
+  border-radius: 5px;
+  position: relative;
+}
+.service .slides .fa-quote-right{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 6rem;
+  color: gray;
+}
+.user{
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+.img-ser>img{
+  width:15rem;
+  height:15rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.name-user{
+  font-size: 3rem;
+  color: var(--color2--);
+  padding-bottom: 5px;
+}
+.com{
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1rem 3rem;
+  }
+  .box-container{
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem ;
+    width: 100%;
+  }
+  .img-food {
+    width: 100%;
+    height: auto;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+   justify-items: center;
+   align-content: center;
+    width: 100%;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4rem;
+
+  }
+  .icon-about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    gap:1rem ;
+
+  }
+  .icon-middle{
+    margin-left: 50%;
+    width: 100%;
+  }
+  .review-slide{
+    padding: 0 5rem;
+    width: 100%;
+    }
+    .slides{
+      box-shadow: 0 0 10px gray;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+  #bar {
+    display: inline-block;
+  }
+  html {
+    font-size: 50%;
+  }
+  .navi {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(245, 239, 239);
+    border-top: 2px solid rgba(242, 245, 236, 0.7);
+    padding: 1rem;
+    border-bottom: 2px solid rgba(242, 245, 236, 0.7);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 1s linear;
+  }
+  .navi.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .navi a {
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: rgb(218, 217, 217);
+  }
+  .slide {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 10rem;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  /* .btn-top {
+    margin-left: 30%;
+  } */
+
+}
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 40%;
+  }
+  .img-top > img {
+    width: 350px;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+   justify-items: center;
+   align-content: center;
+
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3rem;
+  }
+  .img-about>img{
+    width: 300px;
+  }
+  .icon-about{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap:1rem ;
+
+  }
+  .icon-middle{
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 428px) {
+  html {
+    font-size: 37%;
+  }
+  .img-top > img {
+    width: 300px;
+  }
+  .img-top > img {
+    width: 250px;
+  }
+  .box-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem ;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 30%;
+  }
+  .img-top > img {
+    width: 250px;
+  }
+}
